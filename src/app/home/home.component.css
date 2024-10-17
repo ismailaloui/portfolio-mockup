@@ -1,7 +1,7 @@
 .p-profile{
-/*   background: url(/assets/img/portfolio.png); */
+  background: url(/assets/img/portfolio.png);
   width: 80%;
-  height: 500px;
+  height: 80vh;
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
