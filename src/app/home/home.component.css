@@ -1,0 +1,36 @@
+.p-profile{
+  background: url(/assets/img/portfolio.png);
+  width: 80%;
+  height: 500px;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+.p-tag {
+background: #98989898;
+color: #fff;
+padding: 5px 10px;
+font-size: 30x;
+}
+.p-desc{
+color: #413a3a;
+width: 80%;
+}
+a, a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.p-read-me{
+ color: black;
+ font-size: 20px;
+ font-weight: 600;
+}
+.p-readmore img{
+  transition: all .5s;
+  transform: translateX(0);
+}
+.p-readmore:hover img{
+  transform: translateX(5px);
+}
+
