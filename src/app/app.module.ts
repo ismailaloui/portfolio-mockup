@@ -6,6 +6,11 @@ import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import {HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { SkillsComponent } from './skills/skills.component';
+import { MatRadioModule } from '@angular/material/radio';
+import { TranslateService } from '@ngx-translate/core';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { FormsModule } from '@angular/forms';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -13,13 +18,18 @@ import { SkillsComponent } from './skills/skills.component';
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    SkillsComponent
+    SkillsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatRadioModule,
+    TranslateModule,
+    TranslateModule.forRoot(),
+    FormsModule
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}, TranslateService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -9,14 +9,27 @@
         </ul>
         <ul>
           <li>
-            <a [routerLink]="['/']" [routerLinkActive]="['is-active']">A propos</a>
+            <a [routerLink]="['/']" [routerLinkActive]="['is-active']">{{'about.title' | translate}}</a>
           </li>
           <li>
-            <a [routerLink]="['skills']">Compétences</a>
+            <a [routerLink]="['skills']">{{'header.skills' | translate}}</a>
           </li>
           <li>
-            <a [routerLink]="['contact']">Me contact</a>
+            <a [routerLink]="['contact']">{{'contact.contactMe' | translate}}</a>
           </li>
+          <li class="nav-item p-1 rounded">
+            <mat-radio-group  [(ngModel)]="language" style="margin-top: 5px;"
+            (change)="languageChange($event)" aria-label="Select a language">
+            <mat-radio-button value="en" >
+                En
+            </mat-radio-button>
+            <mat-radio-button value="fr" class="pl-3">
+                Fr
+            </mat-radio-button>
+        </mat-radio-group>
+
+
+        </li>
         </ul>
       </div>
     </div>
