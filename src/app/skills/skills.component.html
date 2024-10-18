@@ -1,10 +1,9 @@
 <section id="skills">
   <div class="container">
-      <h2><strong>{{'skills.title'}}</strong></h2>
       <span class="bar-title mb-5"></span>
       <div class="row mt-2">
           <div class="col-lg-4" data-aos="fade-up " data-aos-anchor-placement="center-bottom" data-aos-delay="300">
-              <h5 class="h5"><strong>{{'skills.technologies'}}</strong></h5>
+              <h5 class="h5"><strong>{{'skills.technologies' | translate}}</strong></h5>
               <div id="skillgraph">
                   <div class='skill-row' *ngFor="let technologie of skills.technologies;">
                       <div class="label d-flex flex-row">
@@ -18,7 +17,7 @@
               </div>
           </div>
           <div class="col-lg-4" data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-delay="300">
-              <h5 class="h5"><strong>{{'skills.tools'}}</strong></h5>
+              <h5 class="h5"><strong>{{'skills.tools' | translate}}</strong></h5>
               <div id="skillgraph" class="panel panel-default">
                   <div class='skill-row' *ngFor="let tool of skills.tools;">
                       <div class="label d-flex flex-row">
@@ -32,7 +31,7 @@
               </div>
           </div>
           <div class="col-lg-4" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="300">
-              <h5 class="h5"><strong>{{'skills.methodologies'}}</strong></h5>
+              <h5 class="h5"><strong>{{'skills.methodologies' | translate}}</strong></h5>
               <div id="skillgraph" class="panel panel-default">
                   <div class='skill-row' *ngFor="let methodologie of skills.methodologies;">
                       <div class="label d-flex flex-row">
@@ -45,6 +44,24 @@
                   </div>
               </div>
           </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+          <h5 class="h5"><strong>{{'skills.other' | translate}}</strong></h5>
+          <div id="skillgraph" class="panel panel-default">
+              <div class='skill-row' *ngFor="let other of skills.other;">
+                  <div class="label d-flex flex-row">
+                      <span class='skillLabel'>{{other.name}}</span>
+                      <span class="skill-percent">{{other.percent}}%</span>
+                  </div>
+                  <span class='skillData-Wrapper'>
+                      <span [ngClass]="other.remark" class='skillData bg-rust'></span>
+                  </span>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-3"></div>
       </div>
   </div>
 
