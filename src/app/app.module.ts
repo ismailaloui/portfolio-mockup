@@ -11,6 +11,8 @@ import { TranslateService } from '@ngx-translate/core';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { FormsModule } from '@angular/forms';
 import { ContactComponent } from './contact/contact.component';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import { ContactComponent } from './contact/contact.component';
     MatRadioModule,
     TranslateModule,
     TranslateModule.forRoot(),
-    FormsModule
+    FormsModule,
+    ToastrModule.forRoot(),
+    BrowserAnimationsModule
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}, TranslateService],
   bootstrap: [AppComponent]

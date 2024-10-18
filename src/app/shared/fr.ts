@@ -25,6 +25,7 @@ export const locale = {
           'enterObject': "Saisissez l'objet",
           'message': 'Message',
           'send': 'Envoyer',
+          'sendSuccess':"j'ai bien reçu votre message et je vous en remercie. je vous répondrai au plus vite. merci"
       },
       'education': {
           'title': 'Curriculum Vitae',
