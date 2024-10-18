@@ -4,7 +4,6 @@ import * as $ from 'jquery';
 import { TranslationLoaderService } from '../service/translation-loader.service';
 import { locale as english } from '../shared/en';
 import { locale as french } from '../shared/fr';
-import {MatRadioModule} from '@angular/material/radio';
 
 @Component({
   selector: 'app-header',
@@ -25,7 +24,6 @@ export class HeaderComponent implements OnInit{
   }
 
   languageChange($event:any){
-    debugger;
     let lang=$event.value;
     localStorage.setItem("lang", lang);
     this._translateService.setDefaultLang(lang);
