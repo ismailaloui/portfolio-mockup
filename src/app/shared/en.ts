@@ -59,6 +59,7 @@ export const locale = {
           'skills': 'Skills',
           'references': 'References',
           'contactMe': 'Contact me',
+          'experience': 'Experience'
       },
       'home': {
           'iAmDeveloper': 'I am developer',
@@ -73,10 +74,12 @@ export const locale = {
       },
       'skills': {
           'title': 'Skills',
+          'programming': 'programming',
           'technologies': 'Technologies',
           'tools': 'Tools',
           'methodologies': 'Methodologies',
-          'other': 'Other Skills'
+          'other': 'Other Skills',
+          'framework' : 'Framework'
       },
   }
 }
