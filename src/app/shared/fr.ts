@@ -60,6 +60,7 @@ export const locale = {
           'skills': 'Compétences',
           'references': 'Recommandations',
           'contactMe': 'Me Contacter',
+          'experience': 'Expérience'
 
       },
       'home': {
@@ -75,10 +76,12 @@ export const locale = {
       },
       'skills': {
           'title': 'Compétences',
+          'programming': 'Programmation',
           'technologies':'Téchnologies',
           'tools':'Outils',
           'methodologies':'Méthodologies',
-          'other':'Autres Compétences'
+          'other':'Autres Compétences',
+          'framework' : 'Framework'
       },
   }
 }

@@ -1,68 +1,153 @@
+
+
+
+
 <section id="skills">
+  <div class="heading">
+    <h2>{{'skills.title' | translate}}</h2>
+</div>
+  <div class="red-divider" style="background-color: #ff6700!important;"></div>
+
   <div class="container">
-      <span class="bar-title mb-5"></span>
-      <div class="row mt-2">
-          <div class="col-lg-4" data-aos="fade-up " data-aos-anchor-placement="center-bottom" data-aos-delay="300">
-              <h5 class="h5"><strong>{{'skills.technologies' | translate}}</strong></h5>
-              <div id="skillgraph">
-                  <div class='skill-row' *ngFor="let technologie of skills.technologies;">
-                      <div class="label d-flex flex-row">
-                          <span class="skillLabel">{{technologie.name}}</span>
-                          <span class="skill-percent">{{technologie.percent}}%</span>
-                      </div>
-                      <span class='skillData-Wrapper'>
-                          <span [ngClass]="technologie.remark" class='skillData bg-rust'></span>
-                      </span>
+
+      <div class="row">
+          <div class="col-12 mx-4">
+              <h4>{{'skills.programming' | translate}}</h4>
+          </div>
+          <div class="col-lg-6">
+              <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:95%; background-color: #e96228;">
+                      <h6 class="text-center mt-1">HTML</h6>
+                  </div>
+              </div>
+              <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%; background-color: #2862e9;">
+                      <h6 class="text-center mt-1">CSS</h6>
+                  </div>
+              </div>
+              <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:90%; background-color: #7377ad;">
+                      <h6 class="text-center mt-1">PHP</h6>
+                  </div>
+              </div>
+              <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:70%; background-color: #1edc10;">
+                      <h6 class="text-center mt-1">JAVA & JEE</h6>
                   </div>
               </div>
           </div>
-          <div class="col-lg-4" data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-delay="300">
-              <h5 class="h5"><strong>{{'skills.tools' | translate}}</strong></h5>
-              <div id="skillgraph" class="panel panel-default">
-                  <div class='skill-row' *ngFor="let tool of skills.tools;">
-                      <div class="label d-flex flex-row">
-                          <span class='skillLabel'>{{tool.name}}</span>
-                          <span class="skill-percent">{{tool.percent}}%</span>
-                      </div>
-                      <span class='skillData-Wrapper'>
-                          <span [ngClass]="tool.remark" class='skillData bg-rust'></span>
-                      </span>
+          <div class="col-md-6">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:80%; background-color: #e98605;">
+                  <h6 class="text-center mt-1">JS & TS</h6>
+                </div>
+              </div>
+              <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:85%; background-color: #f10e1d;">
+                      <h6 class="text-center mt-1">JQuery</h6>
+                  </div>
+              </div>
+              <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:60%; background-color: #3fbef7;">
+                      <h6 class="text-center mt-1">C & C++ & C#</h6>
+                  </div>
+              </div>
+              <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:80%; background-color: #a4ac07;">
+                      <h6 class="text-center mt-1">MySql, PgSql, Maria DB MySql</h6>
                   </div>
               </div>
           </div>
-          <div class="col-lg-4" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="300">
-              <h5 class="h5"><strong>{{'skills.methodologies' | translate}}</strong></h5>
-              <div id="skillgraph" class="panel panel-default">
-                  <div class='skill-row' *ngFor="let methodologie of skills.methodologies;">
-                      <div class="label d-flex flex-row">
-                          <span class='skillLabel'>{{methodologie.name}}</span>
-                          <span class="skill-percent">{{methodologie.percent}}%</span>
-                      </div>
-                      <span class='skillData-Wrapper'>
-                          <span [ngClass]="methodologie.remark" class='skillData bg-rust'></span>
-                      </span>
+
+          <div class="col-12 mx-4">
+              <h4>{{'skills.framework' | translate}}</h4>
+          </div>
+          <div class="col-lg-6">
+              <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:90%; background-color: #28b0ee;">
+                      <h6 class="text-center mt-1">Symfony</h6>
+                  </div>
+              </div>
+              <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:80%; background-color: #6aad3d;">
+                      <h6 class="text-center mt-1">Spring boot & Hibernate</h6>
+                  </div>
+              </div>
+              <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:60%; background-color: #753dad;">
+                      <h6 class="text-center mt-1">Android</h6>
                   </div>
               </div>
           </div>
-      </div>
-      <div class="row mt-3">
-        <div class="col-lg-3"></div>
-        <div class="col-lg-6">
-          <h5 class="h5"><strong>{{'skills.other' | translate}}</strong></h5>
-          <div id="skillgraph" class="panel panel-default">
-              <div class='skill-row' *ngFor="let other of skills.other;">
-                  <div class="label d-flex flex-row">
-                      <span class='skillLabel'>{{other.name}}</span>
-                      <span class="skill-percent">{{other.percent}}%</span>
+
+          <div class="col-lg-6">
+              <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%; background-color: #bd002e;">
+                      <h6 class="text-center mt-1">Angular</h6>
                   </div>
-                  <span class='skillData-Wrapper'>
-                      <span [ngClass]="other.remark" class='skillData bg-rust'></span>
-                  </span>
+              </div>
+              <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:75%; background-color: #367cf7;">
+                      <h6 class="text-center mt-1">Vue.js</h6>
+                  </div>
+              </div>
+              <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:85%; background-color: #e0189a;">
+                      <h6 class="text-center mt-1">Bootstrap</h6>
+                  </div>
               </div>
           </div>
-        </div>
-        <div class="col-lg-3"></div>
+          <div class="col-12 mx-4">
+              <h4>{{'skills.tools' | translate}}</h4>
+          </div>
+          <div class="col-lg-6">
+              <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:85%;">
+                      <h6 class="text-center mt-1">SonarQube et Checkmarx</h6>
+                  </div>
+              </div>
+              <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:85%;">
+                      <h6 class="text-center mt-1">GitLab, GitHub</h6>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6">
+              <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:65%;">
+                      <h6 class="text-center mt-1">Docker, Kubernetes</h6>
+                  </div>
+              </div>
+              <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:90%;">
+                      <h6 class="text-center mt-1">Vs code,PhpStorm,SpringToolSuite, HeidiSQL ..</h6>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-12 mx-4">
+              <h4>{{'skills.methodologies' | translate}}</h4>
+          </div>
+
+          <div class="col-lg-6" *ngFor="let method of skills.methodologies;" >
+              <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:85%; background-color: #17d5ee;">
+                      <h6 class="text-center mt-1">{{method.name}}</h6>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-12 mx-4">
+              <h4>{{'skills.other' | translate}}</h4>
+          </div>
+
+          <div class="col-lg-6" *ngFor="let other of skills.other;">
+              <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:'{{other.percent}}%'; background-color: #3e16b4;">
+                      <h6 class="text-center mt-1">{{other.name}}</h6>
+                  </div>
+              </div>
+          </div>
       </div>
   </div>
-
 </section>

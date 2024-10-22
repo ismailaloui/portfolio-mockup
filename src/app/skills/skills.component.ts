@@ -26,12 +26,9 @@ export class SkillsComponent implements OnInit {
     methodologies:[
         {name:"Agilité",percent:70,remark:'excellent'},
         {name:"Uml",percent:90,remark:'excellent'},
-        {name:"Disign Thinking",percent:70,remark:'good'},
-        {name:"TDD",percent:90,remark:'excellent'},
-        {name:"DevOps",percent:50,remark:'average'}
       ],
     other:[
-        {name:"Installation entretien et dépannage des équipements informatiques, câblage réseau informatique.",percent:90,remark:'excellent'},
+        {name:"Installation entretien et dépannage des équipements informatiques",percent:90,remark:'excellent'},
         {name:"Radiométrie , géométrie de l’image et Synthèse d’image.",percent:50,remark:'average'},
 
       ]
